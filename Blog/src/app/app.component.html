@@ -1,0 +1,265 @@
+<!-- <h1>Hello This is Angular {{title}}</h1> -->
+<!-- <h2> {{data}} </h2>
+<h3> {{getValue()}} </h3>
+<h4> 23+32 </h4>
+<h4> {{23+32}} </h4>
+<h3> This is Boolean </h3>  
+<h4> {{title == "15"}} </h4> -->
+
+<!-- Gives Error : -->
+<!-- <h3> {{title = "Hello"}} </h3> -->
+<!-- <h1> {{typeof title }}</h1> -->
+<!-- <h1> {{var1++}} </h1> -->
+<!-- <h1> {{new title}} </h1> -->
+
+
+<!-- <h2 class="{{title}}">  Hello Angular {{title}}</h2> -->
+
+<!-- <app-user-list></app-user-list>
+<app-user-list2></app-user-list2>
+<app-student-list></app-student-list>
+<app-country-list></app-country-list>  -->
+<!-- <app-user-line></app-user-line> -->
+
+<!-- <app-login></app-login>
+<app-sign-in></app-sign-in>
+<app-sign-up></app-sign-up> -->
+
+<!-- <button (click) = "getName()">Hit Me!!</button> <br/><br/>
+<button (click) = "getName2('Nick')">Hit Me 2!!</button> <br/><br/>
+<button (click) = "getValue()">Hit Me Too!!</button> <br/><br/> -->
+
+<!-- <button (click) = "getData('Hello')">Hit Me for Loing!!</button> <br/><br/> -->
+
+<!-- <input type="text"  (keyup) = "getData('box')" placeholder="event keyup"  /> -->
+
+<!-- <input type="text" #box1 (keyup) = "getData(box1.value)" placeholder="event keyup"  /> <br/><br/>
+<input type="text" #box2 (keydown) = "getData(box2.value)" placeholder="event keyDown"  /> <br/><br/>
+<input type="text" #box3 (blur) = "getData(box3.value)" placeholder="event blur"  /> <br/><br/>
+<input type="text" #box4 (input) = "getData(box4.value)" placeholder="event input"  /> <br/><br/> -->
+
+<!-- <h1 (mouseover) = "getData('over')"> Hover Me around !?! </h1> -->
+<!-- <h1 (mouseleave) = "getData('leave')"> Hover Me around !?! </h1> -->
+
+
+<!-- <input type="text" #box5 (keyup)="getValue(box5.value)"  placeholder="Enter Name : " name ="uername" /> <br/><br/> -->
+<!-- <input type="text" #box5 (keydown)="getValue(box5.value)"  placeholder="Enter Name : " name ="username" /> <br/><br/> -->
+<!-- <input type="text" #box5 (blur)="getValue(box5.value)"  placeholder="Enter Name : " name ="username" /> <br/><br/> -->
+<!-- <input type="text" #box5 (input)="getValue(box5.value)"  placeholder="Enter Name : " name ="username" /> <br/><br/> -->
+
+
+<!-- <input type="text" #box5   placeholder="Enter Name " name ="username" /> <br/><br/> -->
+
+
+<!--  Gets placeholder / name  -->
+<!-- <Button (click)="getValue(box5.placeholder)"> Click placeholder</Button> <br/>
+<Button (click)="getValue(box5.name)"> Click name</Button> <br/> -->
+
+<!-- <p> Box value is : {{displayVal}}</p> -->
+
+
+<!-- <button (click) = "counter('add')" placeholder="increment"> ++ </button>
+<button (click) = "counter('sub')" placeholder="increment"> -- </button> <br/>
+<p>Count : {{count}}</p> -->
+
+<!-- <h1>{{title2}}</h1> -->
+<!-- <h1 *ngIf="show; then ifBlock  else elseBlock"> -->
+<!-- <h1 *ngIf="show == 'YES'; then ifBlock  else elseBlock">
+        This is ngIf example
+    </h1>
+    
+    <ng-template #ifBlock>
+        <h2>If Condition</h2>
+    </ng-template>
+    <ng-template #elseBlock>
+        <h2>Else Condition</h2>
+    </ng-template> -->
+
+
+<!-- <h1>{{title3}}</h1>
+
+<ng-template  [ngIf]="color1 === 'orange' "  >
+    <h2 style="color: orange; ">Orange Color</h2>
+</ng-template> 
+<ng-template  [ngIf]="color2 === 'cyan' "  >
+    <h2 style="color: cyan; ">Cyan Color</h2>
+</ng-template> 
+<ng-template  [ngIf]="color3 === 'green' "  >
+    <h2 style="color: green; ">Green Color</h2>
+</ng-template>  -->
+
+<!-- <h1>{{title4}}</h1>
+
+<div [ngSwitch]="color">
+
+    <h2 *ngSwitchCase=" 'red' " style="color: red;">Red Color</h2>
+    <h2 *ngSwitchCase=" 'green' " style="color: green;">Green Color</h2>
+    <h2 *ngSwitchCase=" 'blue' " style="color: blue;">Blue Color</h2>
+    <h2 *ngSwitchCase=" 'yellow' " style="color: yellow;">Yellow Color</h2>
+    <h2 *ngSwitchCase=" 'cyan' " style="color: cyan;">Cyan Color</h2>
+    <h2 *ngSwitchCase=" 'purple' " style="color: purple;">Purple Color</h2>
+    <h2 *ngSwitchDefault style="color: peru;">This is default</h2>
+
+</div> -->
+
+<!-- <h1>{{title5}}</h1>
+<h3 *ngFor="let item of users"> Name is : {{item}}</h3>
+<h3 *ngFor="let item of userDetails">  {{item.username}}  {{item.lastname}} </h3> -->
+
+<!-- <h1>{{title6}}</h1>
+<ul *ngFor="let item of persons">
+    <li>{{item.username}}  -  {{item.lastname}}</li>
+   
+    <ol>SocialAccounts : </ol>
+    <ul *ngFor="let acc of item.socialAcc">
+        <li>{{acc}}</li>
+    </ul>
+</ul> -->
+
+<!-- <h1 [style.color]="'green'" > {{title7}}</h1>
+<h1 [style.color]="colorBind" [style.backgroundColor]="bgColor"> {{title7}}</h1>
+<button (click) = "updateColor()">Update Color</button> -->
+
+<!-- <app-header></app-header>
+<h2>{{title8}}</h2> -->
+
+<!-- <h2>{{title9}}</h2>
+<form #basicForm="ngForm" (ngSubmit)="getData2(basicForm.value)" action="">
+
+    <input ngModel type="text" name="user" id="" placeholder="Enter User Name : " /> <br/><br/>
+    <input ngModel type="text" name="email" id="" placeholder="Enter User email : " /> <br/><br/>
+    <input ngModel type="password" name="pwd" id="" placeholder="Enter User password : " /> <br/><br/>
+    <button>Register</button>
+
+</form>
+<ul>
+    <li>{{userData.user}}</li>
+    <li>{{userData.email}}</li>
+    <li>{{userData.pwd}}</li>
+</ul> -->
+
+
+<!-- <h2>{{title10}}</h2>
+<button (click) = "toggle()">Toggle Me!?!</button>
+<div *ngIf="display">
+    Heading Tag
+    <h3>This is heading tag</h3>
+    <h3>This is heading tag</h3>
+    <h3>This is heading tag</h3>
+    <h3>This is heading tag</h3>
+</div> -->
+
+<!-- <h2>{{title12}}</h2>
+<input type="text" placeholder="Enter new task : "  #task /> <br/><br/>
+<button (click) ="addTask(task.value)"  >Add Task</button>
+
+<ul *ngFor="let item of list">
+   <li>{{item.name}}  <button (click) = "removeTask(item.id)">Chacked</button> </li><br/> 
+</ul> -->
+
+
+<!-- <h2>{{title13}}</h2>
+<app-child [item]="data2"></app-child>
+<button (click)=" updateChild()">Update Child Component</button> -->
+
+<!-- <h2>{{title14}}</h2>
+
+<ul *ngFor="let user of userDetails">
+    <app-user-details  [item]="user" ></app-user-details>
+</ul> -->
+
+<!-- <h2>{{title15}}</h2>
+<app-child (updateDataEvent) = " updateData($event) "></app-child> -->
+
+<!-- <h2>{{title16}}</h2>
+<input type="text"  [(ngModel)]="name" />
+<h3>{{name}}</h3> -->
+
+<!-- <h2>{{title17}}</h2>
+<input type="text" #box>
+<button  (click) = "getVal(box.value)"> Call Function </button> -->
+
+<!-- <h2>{{title18 | uppercase }}</h2>
+<h2>{{title18 | lowercase }}</h2>
+<h2>{{title18 }}</h2>
+
+<h2>{{today }}</h2>
+<h2>{{today | date}}</h2>
+<h2>{{today | date : 'fullDate'}}</h2>
+<h2>{{today | date}}</h2> -->
+
+
+<!-- <h2>{{title19 }}</h2>
+    <h2>{{title19 | uppercase}}</h2>
+    <h2>{{title19 | slice : 3}}</h2>
+    <h2>{{title19 | slice : 6}}</h2>
+    <h2>{{title19 | slice : 6 : 9}}</h2>
+    <h2>{{title19 | slice : 6  | uppercase}}</h2>
+    <h2>{{user | json}}</h2>
+    <h2>{{user | json | uppercase}}</h2>
+    <h2> {{ 0000002000.3000 | number : '2.2-3' }} </h2>   
+    <h2> {{ 2.3000 | number : '3.3-5' }} </h2>   
+    <h2>{{20 | currency:'USD'}}</h2>
+    <h2>{{20 | currency:'INR'}}</h2>
+    <h2>{{20 | currency:'GBP'}}</h2> -->
+
+
+
+<!-- <h2>{{title20 }}</h2>
+<h2>{{1 | usdTOinr : 80}}</h2>
+<h2>{{20 | usdTOinr : 80}}</h2>
+<h2>{{100 | usdTOinr : 82.08}}</h2> -->
+
+
+<!-- <h2>{{title21}}</h2>
+<form action="" #loginForm = "ngForm" (ngSubmit) = userLogin(loginForm.value) >
+    <form action="" #loginForm = "ngForm" (ngSubmit) = userLogin(loginForm.controls) >
+        <input type="text" name="name" id="" placeholder="Enter name : " ngModel > <br/><br/>
+        <input type="password" name="pwd" id="" placeholder="Enter password : " ngModel > <br/><br/>
+        <button>Login</button><br/><br/>
+    </form>
+<button (click) = userLogin(loginForm.value)>Login outside</button> <br/><br/> -->
+
+
+<!-- <h2>{{title22}}</h2>
+<h2>{{title23}}</h2>
+<form action=""  [formGroup]="LoginForm" (ngSubmit) = "loginUser()" >
+
+    <input type="text" name="name" id="" placeholder="Enter name : "  formControlName="name"> 
+    <span  style = "color:red"  *ngIf="userName && userName.invalid && userName.touched" > *This field is reuired!</span> <br/><br/>
+    
+    <input type="password" name="pwd" id="" placeholder="Enter password : " formControlName="pwd" > 
+    <span  style = "color:red"  *ngIf="pwd && pwd.invalid && pwd.touched" > *Enter Valid Password! </span> <br/><br/>
+    
+    <button [disabled] = "LoginForm.invalid" >Login</button><br/><br/>
+    
+</form> -->
+
+<!-- <h2  >{{title24}}</h2>
+<h1 appRedElement >{{title24}}</h1>
+
+<p >Hey you! HelloWorld !!!!!!!</p>
+<p appRedElement >Hey you! User !!!!!!!</p>
+<p >Hey you! User !!!!!!!</p>
+<p appRedElement>Hey you! HelloWorld !!!!!!!</p> -->
+
+<!-- <h2>{{title25}}</h2>
+<ul>
+    <li *ngFor="let data of uservalue">
+        {{data.username}} : {{data.gender}}
+    </li>
+</ul>
+
+
+
+<app-footer></app-footer> -->
+
+<h2>{{title26}}</h2>
+<ul>
+    <li *ngFor="let user of users">
+        <!-- {{user.Year}} -->
+        {{user.Nation}}
+        {{user.Year}}
+    </li>
+</ul>
+
